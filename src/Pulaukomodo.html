@@ -145,11 +145,16 @@
         <button id="fasilitasBtn" class="buton fw-bolder text-center btn btn-secondary">Fasilitas</button>
     </div>
 
-    <div class="content" id="content">
+    <div class="content fw-medium" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('content').innerHTML = aboutText;
+        document.getElementById('aboutBtn').classList.add('active');
+         });
+
         const aboutText = `
             <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
             dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
@@ -165,19 +170,116 @@
         `;
 
         const jadwalText = `
-            <p>Hari 1: Tiba di Labuan Bajo
-            - Pagi: Tiba di Bandara Komodo, Labuan Bajo.
-            - Siang: Transfer ke hotel, check-in, dan istirahat sejenak.
-            - Sore: Wisata kota di Labuan Bajo, mengunjungi pasar lokal dan menikmati sunset di Bukit Sylvia.
-            - Malam: Makan malam di restoran lokal dan kembali ke hotel untuk istirahat.</p>
-            <br>
-            <p>Hari 2: Pulau Komodo dan Pantai Pink
-            - Pagi: Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo.
-            - Trekking: Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.
-            - Siang: Makan siang di atas kapal.
-            - Pantai Pink: Snorkeling dan bersantai di Pantai Pink,
-            - Sore: Kembali ke kapal dan berlayar menuju Pulau Rinca.
-            - Malam: Makan malam di atas kapal dan bermalam di perairan dekat Pulau Rinca.</p>
+            <div class="event-card d-flex align-items-center">
+                <div class="date">
+                <span class="day">Day</span>
+                <span class="month">01</span>
+                </div>
+                <div class="event-info ms-3">
+                <h2 class="event-title">Tiba di Pelabuhan Bajo</h2>
+                </div>
+            </div>
+
+            <div class="border1">
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-plane"></i></div>
+                    <div class="border-content">
+                        <h3>Pagi : Tiba di Bandara Komodo, Labuan Bajo.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="border-content">
+                        <h3>Siang : Transfer ke hotel, check-in, dan istirahat sejenak.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-city"></i></div>
+                    <div class="border-content">
+                        <h3>Sore : Wisata kota di Labuan Bajo, mengunjungi pasar lokal dan menikmati sunset di Bukit Sylvia.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="border-content">
+                        <h3>Malam : Makan malam di restoran lokal dan kembali ke hotel untuk istirahat.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card d-flex align-items-center">
+                <div class="date">
+                <span class="day">Day</span>
+                <span class="month">02</span>
+                </div>
+                <div class="event-info ms-3">
+                <h2 class="event-title">Pulau Komodo dan Pantai Pink</h2>
+                </div>
+            </div>
+
+            <div class="border1">
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-plane"></i></div>
+                    <div class="border-content">
+                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo. Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="border-content">
+                        <h3>Siang : Makan siang di atas kapal. Snorkeling dan bersantai di Pantai Pink, menikmati keindahan pasir merah muda dan kehidupan bawah laut yang menakjubkan.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-city"></i></div>
+                    <div class="border-content">
+                        <h3>Sore : Kembali ke kapal dan berlayar menuju Pulau Rinca.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="border-content">
+                        <h3>Malam: Makan malam di atas kapal dan bermalam di perairan dekat Pulau Rinca.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card d-flex align-items-center">
+                <div class="date">
+                <span class="day">Day</span>
+                <span class="month">03</span>
+                </div>
+                <div class="event-info ms-3">
+                <h2 class="event-title">Pulau Rinca dan Desa Nelayan Lokal</h2>
+                </div>
+            </div>
+
+            <div class="border1">
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-plane"></i></div>
+                    <div class="border-content">
+                        <h3>Pagi : Sarapan di kapal. Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="border-content">
+                        <h3>Siang : Makan siang di atas kapal.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-city"></i></div>
+                    <div class="border-content">
+                        <h3>Sore : Kembali ke Labuan Bajo.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="border-content">
+                        <h3>Malam : Makan malam di Labuan Bajo dan transfer ke bandara atau hotel, sesuai dengan jadwal penerbangan.</h3>
+                    </div>
+                </div>
+            </div>
         `;
 
         const hargaText = `
