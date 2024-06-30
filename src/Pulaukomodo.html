@@ -14,7 +14,7 @@
     
     <!-- SplideJS -->
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
-    <title>Paket Wisata Pulau Komod</title>
+    <title>Paket Wisata Pulau Komodo</title>
 </head>
 <body>
     <nav id="nav" class="navbar-main bg-body-tertiary d-flex">
@@ -116,7 +116,7 @@
       </div>
 
     <div class="mt-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center w-100">
             <div class="col-md-7">
                 <img src="../public/assets/komodo.jpg" class="img-fluid rounded custom-img" alt="Komodo">
             </div>
@@ -139,7 +139,7 @@
     </div>
 
     <div class="paket">
-        <button id="aboutBtn" class="buton fw-bolder text-center btn btn-secondary">About</button>
+        <button id="aboutBtn" class="buton active fw-bolder text-center btn btn-secondary">About</button>
         <button id="jadwalBtn" class="buton fw-bolder text-center btn btn-secondary">Jadwal</button>
         <button id="hargaBtn" class="buton fw-bolder text-center btn btn-secondary">Harga</button>
         <button id="fasilitasBtn" class="buton fw-bolder text-center btn btn-secondary">Fasilitas</button>
@@ -147,6 +147,17 @@
 
     <div class="content" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
+        <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
+            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
+            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
+            flora dan fauna yang eksotis. </p>
+            <br>
+
+            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
+            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
+            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
+            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
+            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
     </div>
 
     <script>
@@ -256,7 +267,7 @@
                         document.getElementById('content').innerHTML = fasilitasText;
                         break;
                     default:
-                        document.getElementById('content').innerHTML = '';
+                        document.getElementById('content').innerHTML = aboutText;
                         break;
                 }
             });
