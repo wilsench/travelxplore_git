@@ -307,3 +307,73 @@ h1,h2,h3,h4,h5,p {
         }
     }
 }
+
+#Footer{
+    
+    background-color: #f1f3ff;
+    display: flex;
+    padding-top: 30px;
+   
+
+    flex-basis: 0;
+    width: 100%;
+    height: 35vh;
+    .container{
+        margin-left: 15px;
+
+    }
+
+    h3{ margin-right: 5px;
+        font-size: 20px;
+    
+    }
+    ul{ 
+        padding: 0;
+        list-style-type: none;
+        
+    
+    }
+    a{ font-size: 15px;
+        color:#505050;
+        text-decoration: none
+    }
+    
+    #social{
+        margin-top: 10px;
+        a{
+            margin-right: 10px;
+        }
+    }
+    .logo {
+        
+        a {  
+            width: max-content;
+            display: flex;
+            gap: 1rem; 
+
+
+            .text-logo {
+                h2 {
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 20qpx;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+   
+}
+#Copyright{
+    text-align: center;
+    align-content: center;
+
+
+    color:#FFFFFF;
+    width: 100%;
+    height:50px;
+    background-color: #005EFF;
+}
