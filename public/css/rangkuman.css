@@ -1,1 +1,54 @@
-/*# sourceMappingURL=rangkuman.css.map */
+.container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container h1 {
+  background: #003D79;
+  color: white;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  font-size: 24px;
+}
+.container div {
+  padding: 20px;
+}
+.container div h3 {
+  background: #003D79;
+  color: white;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.container div p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container div p strong {
+  color: #333;
+  flex: 1;
+}
+.container div p span {
+  color: #555;
+  flex: 2;
+  text-align: right;
+}
+.container .total {
+  margin-top: 20px;
+}
+.container .total p {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=rangkuman.css.map */

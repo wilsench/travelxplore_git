@@ -5,6 +5,7 @@ $(document).ready(function() {
     const provinsi = localStorage.getItem('provinsi');
     const kabupaten = localStorage.getItem('kabupaten');
     const alamatLengkap = localStorage.getItem('alamatLengkap');
+    const namaPaket = localStorage.getItem('namaPaket');
     const jumlahPeserta = localStorage.getItem('jumlahPeserta');
     const hargaPaket = parseFloat(localStorage.getItem('harga'));
     const hargaTransportasi = parseFloat(localStorage.getItem('hargaTransportasi'));
@@ -18,6 +19,7 @@ $(document).ready(function() {
     $('#provinsi').text(provinsi);
     $('#kabupaten').text(kabupaten);
     $('#alamatLengkap').text(alamatLengkap);
+    $('#namaPaket').text(namaPaket);
     $('#jumlahPeserta').text(jumlahPeserta);
     $('#hargaPaket').text(formatRupiah(hargaPaket));
     $('#hargaTransportasi').text(formatRupiah(hargaTransportasi));

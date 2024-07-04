@@ -4,88 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Detail</title>
+    <link rel="stylesheet" href="../public/css/stylesheet.css">
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../public/css/checkout.css" rel="stylesheet">
+    <link rel="icon" href="../public/assets/logo.svg">
 </head>
 <body>
-    <div class="container1 mt-5">
-        <h1 class="check">Checkout Detail</h1>
-        <form>
-            <div class="mb-3">
-                <label for="namaLengkap" class="fs-5 fw-semibold form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="namaLengkap">
+    <nav id="nav" class="navbar-main bg-body-tertiary d-flex">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="../public/assets/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <div class="text-logo d-flex flex-column gap-0">
+                <h2 class="fs-4 fw-bold text-main-black">TravelXPlore</h2>
+                <p class="text-soft-black">Jelajahi Dunia, Ciptakan Cerita</p>
             </div>
-            <div class="b-3">
-                <label for="email" class="fs-5 fw-semibold form-label">Alamat Email</label>
-                <input type="email" class="form-control" id="email">
+          </a>
+        </div>
+        <div class="nav-menu d-flex">
+            <a href="" class="text-soft-black">Home</a>
+            <a href="" class="text-soft-black">Galeri</a>
+            <div class="dropdown">
+                <a class="text-soft-black dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paket</a>
+                <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item mb-3" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">A</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Pulau Komodo</p>
+                                <p class="paket-desc">Trekking, Snorkeling, Kunjungan Desa Lokal</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item mb-3" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">B</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Snorkeling dan Diving</p>
+                                <p class="paket-desc">Snorkeling dan diving di beberapa titik terbaik </p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item mb-3" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">C</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Keluarga</p>
+                                <p class="paket-desc">Mengunjungi pulau-pulau dengan fasilitas yang mendukung kenyamanan keluarga</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">D</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Romantis</p>
+                                <p class="paket-desc">Menikmati sunset cruise, makan malam romantis di pantai, snorkeling bersama, dan mengunjungi lokasi-lokasi indah untuk foto prewedding atau sekadar menikmati waktu bersama</p>
+                            </div>
+                        </div>
+                    </a></li>
+                </ul>
             </div>
-            <div class="b-3">
-                <label for="telepon" class="fs-5 fw-semibold form-label">Telepon</label>
-                <input type="text" class="form-control" id="telepon">
+        </div>
+    </nav>
+    <section id="checkout">
+        <div class="container mt-8">
+            <div class="row">
+                <div class="col-md-8 mb-4">
+                    <div class="container1 p-4">
+                        <h1 class="check">Checkout Detail</h1>
+                        <form>
+                            <div class="mb-3">
+                                <label for="namaLengkap" class="fs-6 fw-semibold form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="namaLengkap">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="fs-6 fw-semibold form-label">Alamat Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telepon" class="fs-6 fw-semibold form-label">Telepon</label>
+                                <input type="text" class="form-control" id="telepon">
+                            </div>
+                            <div class="mb-3">
+                                <label for="provinsi" class="fs-6 fw-semibold form-label">Provinsi</label>
+                                <input type="text" class="form-control" id="provinsi">
+                            </div>
+                            <div class="mb-3">
+                                <label for="kabupaten" class="fs-6 fw-semibold form-label">Kabupaten / Kota</label>
+                                <input type="text" class="form-control" id="kabupaten">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alamatLengkap" class="fs-6 fw-semibold form-label">Alamat Lengkap</label>
+                                <input type="text" class="form-control" id="alamatLengkap">
+                            </div>
+                            <div class="mb-3">
+                                <label for="namaPaket" class="fs-6 fw-semibold form-label">Nama Paket Wisata</label>
+                                <input type="text" class="form-control" id="namaPaket" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <h4>Pelayanan Paket Wisata</h4>
+                                <label for="hargaTransportasi" class="fs-6 fw-semibold form-label">Transportasi</label>
+                                <input type="text" class="form-control" id="hargaTransportasi" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hargaMakanan" class="fs-6 fw-semibold form-label">Makanan</label>
+                                <input type="text" class="form-control" id="hargaMakanan" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hargaPenginapan" class="fs-6 fw-semibold form-label">Penginapan</label>
+                                <input type="text" class="form-control" id="hargaPenginapan" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="container2 p-4">
+                        <div>
+                            <h4>Your Order</h4>
+                        </div>
+                        <div id="text"class="d-flex align-items-center ">
+                            <h5>Paket</h5>
+                            <h5>Subtotal</h5>
+                        </div>
+                        <hr>
+                        <div class="mb-3 d-flex align-items-center">
+                            <label for="hargaPaket" class="form-label me-2">Harga Paket Wisata</label>
+                            <input type="text" class="form-control flex-grow-1" id="hargaPaket" readonly>
+                        </div>
+                        <hr>
+                        <div class="mb-3 d-flex align-items-center">
+                            <label for="jumlahPeserta" class="form-label me-2">Jumlah Peserta</label>
+                            <input type="text" class="form-control flex-grow-1" id="jumlahPeserta" readonly>
+                        </div>
+                        <hr>
+                        <div class="mb-3 d-flex align-items-center">
+                            <label for="totalHarga" class="form-label me-2">Total Harga</label>
+                            <input type="text" class="form-control flex-grow-1"  id="totalHarga" readonly>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Transfer Bank Manual</h5>
+                        </div>
+                        <div id="text_bayar">
+                            <p>Lakukan pembayaran Anda langsung ke rekening bank kami, 
+                                nomor Rekening akan ditampilkan setelah proses ini. 
+                                Pesanan Anda akan dikirim setelah menerima pembayaran</p>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" onclick="placeOrder()">Place Order</button>
+                    </div>
+                </div>
             </div>
-            <div class="b-3">
-                <label for="provinsi" class="fs-5 fw-semibold form-label">Provinsi</label>
-                <input type="text" class="form-control" id="provinsi">
-            </div>
-            <div class="mb-3">
-                <label for="kabupaten" class="fs-5 fw-semibold form-label">Kabupaten / Kota</label>
-                <input type="text" class="form-control" id="kabupaten">
-            </div>
-            <div class="mb-3">
-                <label for="alamatLengkap" class="fs-5 fw-semibold form-label">Alamat Lengkap</label>
-                <input type="text" class="form-control" id="alamatLengkap">
-            </div>
-            <div class="mb-3">
-                <label for="namaPaket" class="fs-5 fw-semibold form-label">Nama Paket Wisata</label>
-                <input type="text" class="form-control" id="namaPaket" readonly>
-            </div>
-            <div class="mb-3">
-                <h4>Pelayanan Paket Wisata</h4>
-                <label for="hargaTransportasi" class="fs-5 fw-semibold form-label">Transportasi</label>
-                <input type="text" class="form-control" id="hargaTransportasi" readonly>
-            </div>
-            <div class="mb-3">
-                <label for="hargaMakanan" class="fs-5 fw-semibold form-label">Makanan</label>
-                <input type="text" class="form-control" id="hargaMakanan" readonly>
-            </div>
-            <div class="mb-3">
-                <label for="hargaPenginapan" class="fs-5 fw-semibold form-label">Penginapan</label>
-                <input type="text" class="form-control" id="hargaPenginapan" readonly>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
 
-    <div class="container2">
-        <div>
-            <h4>Your Order</h4>
-        </div>
-        <diV>
-            <h5>Paket</h5>
-            <h5>Subtotal</h5>
-        </diV>
-        <div class="mb-3">
-            <label for="hargaPaket" class="form-label">Harga Paket Wisata</label>
-            <input type="text" class="form-control" id="hargaPaket" readonly>
-        </div>
-        <div class="mb-3">
-            <label for="jumlahPeserta" class="form-label">Jumlah Peserta</label>
-            <input type="text" class="form-control" id="jumlahPeserta" readonly>
-        </div>
-        <div class="mb-3">
-            <label for="totalHarga" class="form-label">Total Harga</label>
-            <input type="text" class="form-control" id="totalHarga" readonly>
-        </div>
-        <div>
-            <h5>Transfer Bank Manual</h5>
-        </div>
-        <diV>
-            <p>Lakukan pembayaran Anda langsung ke rekening bank kami, 
-                nomor Rekening akan ditampilkan setelah proses ini. 
-                Pesanan Anda akan dikirim setelah menerima pembayaran</p>
-        </diV>
-        <button type="button" class="btn btn-primary w-100" onclick="placeOrder()">Place Order</button>
-    </div>
+    <!---->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../public/js/checkout.js"></script>
+
+     <!-- Bootstrap JS -->
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+     <!-- Splide JS -->
+     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
 </body>
 </html>

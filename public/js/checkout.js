@@ -30,6 +30,7 @@ function placeOrder() {
     const hargaMakanan = $('#hargaMakanan').val();
     const hargaPenginapan = $('#hargaPenginapan').val();
     const totalHarga = $('#totalHarga').val();
+    const namaPaket = $('#namaPaket').val();
 
     localStorage.setItem('namaLengkap', namaLengkap);
     localStorage.setItem('email', email);
@@ -38,6 +39,7 @@ function placeOrder() {
     localStorage.setItem('kabupaten', kabupaten);
     localStorage.setItem('alamatLengkap', alamatLengkap);
     localStorage.setItem('jumlahPeserta', jumlahPeserta);
+    localStorage.setItem('namaPaket', namaPaket);
     localStorage.setItem('hargaPaket', hargaPaket);
     localStorage.setItem('hargaTransportasi', hargaTransportasi);
     localStorage.setItem('hargaMakanan', hargaMakanan);

@@ -4,29 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rangkuman Reservasi</title>
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../public/assets/logo.svg">
+    <link rel="stylesheet" href="../public/css/rangkuman.css">
+    
+    <!-- SplideJS -->
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
 <body>
+    <nav id="nav" class="navbar-main bg-body-tertiary d-flex">
+        <div class="logo">
+          <a class="navbar-brand" class="d-flex" href="#">
+            <img src="../public/assets/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <div class="text-logo d-flex flex-column gap-0">
+                <h2 class="fs-4 fw-bold text-main-black">TravelXPlore</h2>
+                <p class="text-soft-black">Jelajahi Dunia, Ciptakan Cerita</p>
+            </div>
+          </a>
+        </div>
+        <div class="nav-menu d-flex">
+            <a href="index.html#hero" class="text-soft-black">Home</a>
+            <a href="index.html#galeri" class="text-soft-black">Galeri</a>
+            <div class="dropdown">
+                <a class="text-soft-black dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paket</a>
+                <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item mb-3" href="Pulaukomodo.html">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">A</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Pulau Komodo</p>
+                                <p class="paket-desc">Trekking, Snorkeling, Kunjungan Desa Lokal</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item mb-3" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">B</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Snorkeling dan Diving</p>
+                                <p class="paket-desc">Snorkeling dan diving di beberapa titik terbaik </p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item mb-3" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">C</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Keluarga</p>
+                                <p class="paket-desc">Mengunjungi pulau-pulau dengan fasilitas yang mendukung kenyamanan keluarga</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <div class="d-flex gap-3">
+                            <div class="paket-icon">
+                                <span class="fs-5">D</span>
+                            </div>
+                            <div class="d-flex paket-menu flex-column">
+                                <p class="paket-title">Paket Wisata Romantis</p>
+                                <p class="paket-desc">Menikmati sunset cruise, makan malam romantis di pantai, snorkeling bersama, dan mengunjungi lokasi-lokasi indah untuk foto prewedding atau sekadar menikmati waktu bersama</p>
+                            </div>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="signin">
+            <a href="signin.html" class="btn btn-main fw-semibold">Sign In</a>
+        </div>
+    </nav>
+    <a href="index.html" class="p-5 back-button text-main-orange"><i class="bi bi-chevron-left"></i>Kembali</a>
     <div class="container mt-5">
-        <h1 class="text-center">Rangkuman Reservasi</h1>
+        <h1>RESERVASI PEMESANAN</h1>
         <div>
-            <p><strong>Nama Lengkap:</strong> <span id="namaLengkap"></span></p>
-            <p><strong>Alamat Email:</strong> <span id="email"></span></p>
-            <p><strong>Telepon:</strong> <span id="telepon"></span></p>
-            <p><strong>Provinsi:</strong> <span id="provinsi"></span></p>
-            <p><strong>Kabupaten/Kota:</strong> <span id="kabupaten"></span></p>
-            <p><strong>Alamat Lengkap:</strong> <span id="alamatLengkap"></span></p>
-            <p><strong>Jumlah Peserta:</strong> <span id="jumlahPeserta"></span></p>
-            <p><strong>Harga Paket Wisata:</strong> <span id="hargaPaket"></span></p>
-            <p><strong>Harga Transportasi:</strong> <span id="hargaTransportasi"></span></p>
-            <p><strong>Harga Makanan:</strong> <span id="hargaMakanan"></span></p>
-            <p><strong>Harga Penginapan:</strong> <span id="hargaPenginapan"></span></p>
-            <p><strong>Total Harga:</strong> <span id="totalHarga"></span></p>
-            <p><strong>Kode Pembayaran:</strong> <span id="kodePembayaran"></span></p>
+            <diV>
+                <p><strong>Nama Lengkap:</strong> <span id="namaLengkap"></span></p>
+                <p><strong>Alamat Email:</strong> <span id="email"></span></p>
+                <p><strong>Telepon:</strong> <span id="telepon"></span></p>
+                <p><strong>Provinsi:</strong> <span id="provinsi"></span></p>
+                <p><strong>Kabupaten/Kota:</strong> <span id="kabupaten"></span></p>
+                <p><strong>Alamat Lengkap:</strong> <span id="alamatLengkap"></span></p>
+            </diV>
+            <div>
+                <h3>PAKET WISATA</h3>
+                <div>
+                    <p><strong>Nama Paket Wisata:</strong> <span id="namaPaket"></span></p>
+                    <p><strong>Jumlah Peserta:</strong> <span id="jumlahPeserta"></span></p>
+                    <p><strong>Harga Paket Wisata:</strong> <span id="hargaPaket"></span></p>
+                </div>
+            </div>
+            <div>
+                <h3>PELAYANAN PAKET WISATA</h3>
+                <div>
+                    <p><strong>Harga Transportasi:</strong> <span id="hargaTransportasi"></span></p>
+                    <p><strong>Harga Makanan:</strong> <span id="hargaMakanan"></span></p>
+                    <p><strong>Harga Penginapan:</strong> <span id="hargaPenginapan"></span></p>
+                </div>
+            </div>
+            <div>
+                <h3>KODE PEMBAYARAN</h3>
+                <div>
+                    <p><strong>Total Harga:</strong> <span id="totalHarga"></span></p>
+                    <p><strong>Kode Pembayaran:</strong> <span id="kodePembayaran"></span></p>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <!---->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../public/js/rangkuman.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Splide JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
 </body>
 </html>

@@ -73,7 +73,42 @@ h1, h2, h3, h4, h5, p {
   backdrop-filter: blur(20px);
 }
 
+.bg-komodo {
+  background-image: url("../assets/paket_komodo.png");
+}
+
+.bg-snorkeling {
+  background-image: url("../assets/paket_snorkeling.png");
+}
+
+.bg-keluarga {
+  background-image: url("../assets/paket_keluarga.png");
+}
+
+.bg-romantis {
+  background-image: url("../assets/paket_romantis.png");
+}
+
+.logo {
+  width: 100%;
+}
+.logo a {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+}
+.logo a .text-logo h2 {
+  margin-bottom: 0;
+}
+.logo a .text-logo p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 .navbar-main {
+  z-index: 100;
   position: sticky;
   top: 0;
   width: 100%;
@@ -156,15 +191,21 @@ h1, h2, h3, h4, h5, p {
 }
 
 #hero {
+  width: 100%;
+  scroll-margin-top: 150px;
   display: flex;
   gap: 5rem;
   padding: 5rem 10rem;
+}
+#hero .hero-start {
+  width: 50%;
 }
 #hero .hero-start img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 #hero .hero-end {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -215,6 +256,8 @@ h1, h2, h3, h4, h5, p {
   margin-bottom: 1rem;
 }
 #hero .hero-end .end .sponsor-image img {
+  width: 300px;
+  height: 30px;
   transition: 0.2s;
 }
 #hero .hero-end .end .sponsor-image img:hover {
@@ -232,7 +275,7 @@ h1, h2, h3, h4, h5, p {
   background-image: url("../assets/punchline.png");
   display: flex;
   justify-content: space-between;
-  padding: 10rem 10rem;
+  padding: 10rem 5rem;
   margin-bottom: 2rem;
 }
 #punchline .start h2 {
@@ -267,4 +310,251 @@ h1, h2, h3, h4, h5, p {
   border-radius: 10px;
   margin: 0 1rem;
   padding: 5px 1rem;
+}
+
+#galeri {
+  scroll-margin-top: 150px;
+  margin: 5rem 0;
+  min-height: 50vh;
+  gap: 5rem;
+}
+#galeri .galeri-end {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+}
+#galeri .galeri-end .box-blue {
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  height: 80vh;
+  border-radius: 15px;
+  background-color: #005EFF;
+  left: 0;
+}
+#galeri .custom-grid .row img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+#galeri .custom-grid .row img:hover {
+  filter: grayscale(100);
+  transition: 0.2s;
+}
+#galeri .custom-grid .description {
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid #005EFF;
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 14px;
+  width: 48%;
+}
+#galeri .custom-grid .description h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#galeri .custom-grid .description p {
+  color: #505050;
+  font-weight: 300;
+  text-align: start;
+  margin-bottom: 10px;
+}
+#galeri .custom-grid .description a {
+  font-size: 14px;
+}
+
+#paket {
+  scroll-margin-top: 150px;
+  padding: 2rem 5rem;
+  height: 100vh;
+}
+#paket .paket-start h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#paket .paket-start hr {
+  width: 5rem;
+  margin-top: 5px;
+  opacity: 1;
+  border-top: 3px solid #FF9F10;
+}
+#paket .paket-end a {
+  display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  text-decoration: none;
+}
+#paket .paket-end a .paket-card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-top: 2rem;
+  max-width: 430px;
+  min-width: 430px;
+  border-radius: 10px;
+  background-blend-mode: multiply;
+  background-color: rgba(128, 128, 128, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  min-height: 200px;
+  justify-content: end;
+  padding: 1.5rem;
+  color: white;
+  transition: 0.2s;
+}
+#paket .paket-end a .paket-card h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+#paket .paket-end a .paket-card p {
+  font-size: 12px;
+  width: 45ch;
+}
+#paket .paket-end a .paket-card span {
+  font-size: 24px;
+  font-weight: bold;
+}
+#paket .paket-end a:hover .paket-card {
+  background-color: white;
+  transition: 0.2s;
+}
+
+#signin {
+  background-color: white;
+  min-height: 100vh;
+}
+#signin .signin-start {
+  padding: 3rem;
+  gap: 3rem;
+}
+#signin .signin-start .end {
+  padding: 0 5rem;
+}
+#signin .signin-start .end .back-button {
+  text-decoration: none;
+  font-weight: 600;
+}
+#signin .signin-start .end .form-content {
+  margin-top: 1.5rem;
+}
+#signin .signin-start .end .form-content .header {
+  gap: 10px;
+}
+#signin .signin-start .end .form-content .header h4 {
+  font-size: 32px;
+  font-weight: bold;
+}
+#signin .signin-start .end .form-content .header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #B0B0B0;
+}
+#signin .signin-start .end .form-content .form {
+  margin-top: 3rem;
+}
+#signin .signin-start .end .form-content .form .form-check {
+  padding-left: 0 !important;
+}
+#signin .signin-start .end .form-content .form input {
+  border-radius: 55rem;
+  margin-left: 0;
+  padding: 10px 20px;
+}
+#signin .signin-start .end .form-content .form .forgot_pwd {
+  color: gray;
+  font-size: 14px;
+}
+#signin .signin-start .end .form-content .form .btn-warning {
+  border-radius: 55rem;
+  color: white;
+}
+#signin .signin-start .end .form-content .form #errorMail {
+  font-size: 14px;
+}
+#signin .signin-start .end .form-content .form #errorPwd {
+  font-size: 14px;
+}
+#signin .signin-start .end .form-content .form .error {
+  border: 1px solid red !important;
+}
+#signin .signin-start .end .form-content .form .hidden {
+  display: none;
+}
+#signin .signin-end {
+  background-image: url("../assets/signin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#admin {
+  min-height: 100vh;
+}
+#admin .bar-active {
+  background-color: #005EFF;
+  font-weight: 500 !important;
+  color: white !important;
+}
+#admin .sidebar {
+  gap: 4rem;
+  min-width: 280px;
+  max-width: 280px;
+  margin-left: 0px;
+  padding: 4rem 2.5rem;
+}
+#admin .sidebar .end span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #B0B0B0;
+  margin-bottom: 2rem;
+}
+#admin .sidebar .end a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  color: #B0B0B0;
+}
+#admin .sidebar .end a i {
+  font-size: 20px;
+}
+#admin .sidebar .end a:hover {
+  font-weight: 500;
+}
+#admin .content {
+  padding: 4rem;
+}
+#admin .content .end {
+  margin-top: 4rem;
+}
+#admin .content .end .info {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  font-weight: 400;
+  border-radius: 10px;
+  gap: 20px;
+}
+#admin .content .end .info .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  background-color: #E9EFFF;
+  border-radius: 55rem;
+  color: #005EFF;
+}
+#admin .content .end .info p {
+  font-size: 18px;
+}
+#admin .content .end .info span {
+  font-size: 14px;
 }/*# sourceMappingURL=stylesheet.css.map */

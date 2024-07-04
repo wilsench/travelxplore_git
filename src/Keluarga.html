@@ -149,19 +149,19 @@
                     <div class="mt-3 hidden">
                         <div class="mb-3">
                             <label for="hargaTransportasi" class="form-label">Transportasi</label>
-                            <input type="text" class="form-control" id="hargaTransportasi" value="6000000" readonly>
+                            <input type="text" class="form-control" id="hargaTransportasi" value="600000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaMakanan" class="form-label">Makanan</label>
-                            <input type="text" class="form-control" id="hargaMakanan" value="3600000" readonly>
+                            <input type="text" class="form-control" id="hargaMakanan" value="999000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaPenginapan" class="form-label">Penginapan</label>
-                            <input type="text" class="form-control" id="hargaPenginapan" value="9000000" readonly>
+                            <input type="text" class="form-control" id="hargaPenginapan" value="1200000" readonly>
                         </div>
                     </div>
                     <div class="mt-3">
-                        <button class="btn btn-primary w-100" onclick="beliPaket('Keluarga', 1860000)">Beli Paket</button>
+                        <button class="btn btn-primary w-100" onclick="beliPaket('Keluarga', 2999000)">Beli Paket</button>
                     </div>
                 </div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -184,6 +184,17 @@
     <div class="content fw-medium" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
     </div>
+
+    <!---->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../public/js/paketwisata.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Splide JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
 
     <script>
         // Jumlah Inputan peserta
@@ -401,7 +412,7 @@
         `;
 
         const hargaText = `
-            <p>- Harga Paket: Rp 4.000.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
+            <p>- Harga Paket: Rp 2.999.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
             <p>- Termasuk:</p>
             <ul>
                 <li>Transportasi laut dengan kapal phinisi/tradisional</li>
