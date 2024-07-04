@@ -14,7 +14,7 @@
     
     <!-- SplideJS -->
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
-    <title>Paket Wisata Pulau Komodo</title>
+    <title>Paket Wisata Pulau Komod</title>
 </head>
 <body>
     <nav id="nav" class="navbar-main bg-body-tertiary d-flex">
@@ -28,8 +28,8 @@
           </a>
         </div>
         <div class="nav-menu d-flex">
-            <a href="index.html#hero" class="text-soft-black">Home</a>
-            <a href="index.html#galeri" class="text-soft-black">Galeri</a>
+            <a href="" class="text-soft-black">Home</a>
+            <a href="" class="text-soft-black">Galeri</a>
             <div class="dropdown">
                 <a class="text-soft-black dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paket</a>
                 <ul class="dropdown-menu p-3">
@@ -82,14 +82,15 @@
             
         </div>
         <div class="signin">
-            <a href="signin.html" class="btn btn-main fw-semibold">Sign In</a>
+            <a href="" class="btn btn-main fw-semibold">Sign In</a>
         </div>
     </nav>
 
     <div class="div-jarak-atas">
         <p class="fs-2 fw-bold text-center">Paket Wisata</p>
-        <p class="fs-2 fw-bold text-center">Pulau Komodo</p>
-        <p class="text-body-tertiary text-center">Treaking, Snarkeling, Kunjungan Desa Lokal</p>
+        <p class="fs-2 fw-bold text-center">Romantis</p>
+        <p class="text-body-tertiary text-center">Menikmati sunset cruise, makan malam romantis di pantai, snorkeling bersama,</p> 
+        <p class="text-body-tertiary text-center">dan mengunjungi lokasi-lokasi indah untuk foto prewedding atau sekadar menikmati waktu bersama</p>
     </div>
 
     <div class="container">
@@ -109,30 +110,30 @@
           <div class="col-12 col-md-4">
             <div class="sales">
               <div class="fw-medium fs-5">Terjual</div>
-              <div>1121</div>
+              <div>849</div>
             </div>
           </div>
         </div>
       </div>
 
     <div class="mt-5">
-        <div class="row justify-content-center w-100">
+        <div class="row justify-content-center">
             <div class="col-md-7">
-                <img src="../public/assets/komodo.jpg" class="img-fluid rounded custom-img" alt="Komodo">
+                <img src="../public/assets/Romantis.jpg" class="img-fluid rounded custom-img" alt="Komodo">
             </div>
             <div class="between col-md-4 ms-md-3">
                 <div class="info-box p-4 rounded">
-                    <h5 class="mb-4">Paket Wisata Pulau Komodo</h5>
+                    <h5 class="mb-4">Paket Wisata Snorkeling dan Diving</h5>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Durasi: 2 - 3 hari
+                        <i class="bi bi-play-circle-fill"></i> Durasi: 3 hari
                     </div>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Rute: Labuan Bajo - Pulau Komodo - Pulau Rinca - Pantai Pink
+                        <i class="bi bi-play-circle-fill"></i> Rute: Labuan Bajo - Pulau Komodo - Pulau Padar - Pink Beach - Batu Bolong
                     </div>
                     <div class="info-item mb-4">
-                        <i class="bi bi-play-circle-fill"></i> Aktivitas: Trekking untuk melihat komodo, snorkeling di Pantai Pink, dan mengunjungi desa nelayan lokal.
-                    </div>
-
+                        <i class="bi bi-play-circle-fill"></i> Aktivitas: Snorkeling di Pink Beach, diving di Batu Bolong, trekking ringan di Pulau Padar, makan malam romantis di tepi pantai
+                    </div>                    
+                    
                     <!-- Menuju ke Checkout -->
                     <div class="amount mt-5">
                         <div class="row">
@@ -148,24 +149,20 @@
                     </div>
                     <div class="mt-3 hidden">
                         <div class="mb-3">
-                            <label for="namaPaket" class="form-label">Nama Paket Wisata</label>
-                            <input type="text" class="form-control" id="namaPaket" readonly>
-                        </div>
-                        <div class="mb-3">
                             <label for="hargaTransportasi" class="form-label">Transportasi</label>
-                            <input type="text" class="form-control" id="hargaTransportasi" value="2000000" readonly>
+                            <input type="text" class="form-control" id="hargaTransportasi" value="4000000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaMakanan" class="form-label">Makanan</label>
-                            <input type="text" class="form-control" id="hargaMakanan" value="1200000" readonly>
+                            <input type="text" class="form-control" id="hargaMakanan" value="2400000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaPenginapan" class="form-label">Penginapan</label>
-                            <input type="text" class="form-control" id="hargaPenginapan" value="3000000" readonly>
+                            <input type="text" class="form-control" id="hargaPenginapan" value="6000000" readonly>
                         </div>
                     </div>
                     <div class="mt-3">
-                        <button class="btn btn-primary w-100" onclick="beliPaket('Pulau Komodo', 6200000)">Beli Paket</button>
+                        <button class="btn btn-primary w-100" onclick="beliPaket('Romantis', 12400000)">Beli Paket</button>
                     </div>
                 </div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -173,6 +170,7 @@
                 </div>
                 <!-- ||||||||||||||||||-->
 
+                </div>
             </div>
         </div>
     </div>
@@ -186,27 +184,13 @@
 
     <div class="content fw-medium" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
-        <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
-            <br>
-
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-        // Jumlah Peserta
+        // Jumlah Inputan peserta
         $(document).ready(function() {
-            const MIN_JUMLAH = 1;
-            const MAX_JUMLAH = 4;
+            const MIN_JUMLAH = 2;
+            const MAX_JUMLAH = 2;
 
             let jumlah = MIN_JUMLAH;
             $('#jumlah').val(jumlah);
@@ -232,24 +216,24 @@
                 $(this).val(jumlah);
             });
         });
+        // |||||||||||||||||||||||
 
         document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('content').innerHTML = aboutText;
         document.getElementById('aboutBtn').classList.add('active');
          });
 
-        const aboutText = `
-            <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
+         const aboutText = `
+            <p>Nikmati pengalaman romantis yang luar biasa dengan paket wisata eksklusif ini, 
+                mengeksplorasi keindahan bawah laut dan keajaiban alam Pulau Komodo. Anda 
+                akan diajak untuk snorkeling di spot-spot indah seperti Pink Beach dan Crystal Bay, 
+                serta diving di Batu Bolong yang terkenal dengan terumbu karangnya yang megah.</p>
             <br>
 
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
+            <p>Selain petualangan bawah laut, paket ini juga mencakup kunjungan santai ke Pulau 
+                Padar untuk menikmati matahari terbenam bersama pasangan di salah satu pemandangan 
+                terindah di Indonesia. Pengalaman malam romantis dengan makan malam khusus di tepi 
+                pantai juga akan menjadi momen tak terlupakan dalam perjalanan ini.</p>
         `;
 
         const jadwalText = `
@@ -273,7 +257,7 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Transfer ke hotel, check-in, dan istirahat sejenak.</h3>
+                        <h3>Siang : Transfer ke hotel bintang 4, check-in, dan istirahat sejenak.</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -285,7 +269,7 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-utensils"></i></div>
                     <div class="border-content">
-                        <h3>Malam : Makan malam di restoran lokal dan kembali ke hotel untuk istirahat.</h3>
+                        <h3>Malam : Makan malam romantis di tepi pantai.</h3>
                     </div>
                 </div>
             </div>
@@ -296,7 +280,7 @@
                 <span class="month">02</span>
                 </div>
                 <div class="event-info ms-3">
-                <h2 class="event-title">Pulau Komodo dan Pantai Pink</h2>
+                <h2 class="event-title">Snorkeling di Pink Beach dan Sunset di Pulau Padar</h2>
                 </div>
             </div>
 
@@ -304,25 +288,25 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo. Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.</h3>
+                        <h3>Pagi : Berangkat ke Pink Beach untuk snorkeling.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Makan siang di atas kapal. Snorkeling dan bersantai di Pantai Pink, menikmati keindahan pasir merah muda dan kehidupan bawah laut yang menakjubkan.</h3>
+                        <h3>Siang : Makan siang di atas kapal. Berlayar ke Pulau Padar..</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-city"></i></div>
                     <div class="border-content">
-                        <h3>Sore : Kembali ke kapal dan berlayar menuju Pulau Rinca.</h3>
+                        <h3>Sore : Trekking ringan di Pulau Padar untuk menikmati matahari terbenam bersama.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-utensils"></i></div>
                     <div class="border-content">
-                        <h3>Malam: Makan malam di atas kapal dan bermalam di perairan dekat Pulau Rinca.</h3>
+                        <h3>Malam: Makan malam di atas kapala.</h3>
                     </div>
                 </div>
             </div>
@@ -333,7 +317,7 @@
                 <span class="month">03</span>
                 </div>
                 <div class="event-info ms-3">
-                <h2 class="event-title">Pulau Rinca dan Desa Nelayan Lokal</h2>
+                <h2 class="event-title">Diving di Batu Bolong dan Kembali ke Labuan Bajo</h2>
                 </div>
             </div>
 
@@ -341,7 +325,7 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Sarapan di kapal. Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
+                        <h3>Pagi: Sarapan di kapal. Berangkat ke Batu Bolong untuk diving</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -359,61 +343,63 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-utensils"></i></div>
                     <div class="border-content">
-                        <h3>Malam : Makan malam di Labuan Bajo dan transfer ke bandara atau hotel, sesuai dengan jadwal penerbangan.</h3>
+                        <h3>Malam : Makan malam di Labuan Bajo dan menikmati waktu bersama.</h3>
                     </div>
                 </div>
             </div>
         `;
 
         const hargaText = `
-            <p>- Harga Paket: Rp 3.500.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
-            <p>- Termasuk:
+            <p>- Harga Paket: Rp 6.500.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
+            <p>- Termasuk:</p>
             <ul>
                 <li>Transportasi laut dengan kapal phinisi/tradisional</li>
-                <li>Akomodasi di kapal dan hotel (1 malam di hotel, 1 malam di kapal)</li>
+                <li>Akomodasi di hotel bintang 4 atau setara di Labuan Bajo</li>
                 <li>Makan pagi, siang, dan malam selama perjalanan</li>
                 <li>Tiket masuk Taman Nasional Komodo</li>
-                <li>Pemandu wisata berpengalaman</li>
-                <li>Peralatan snorkeling</li>
+                <li>Pemandu wisata dan dive master berpengalaman</li>
+                <li>Peralatan snorkeling dan diving</li>
+                <li>Makan malam romantis di tepi pantai</li>
             </ul>
-            <p>- Tidak Termasuk:
+            <p>- Tidak Termasuk:</p>
             <ul>
                 <li>Penerbangan ke/dari Labuan Bajo</li>
                 <li>Asuransi perjalanan</li>
                 <li>Pengeluaran pribadi (belanja suvenir, minuman tambahan, dll.)</li>
-                <li>Tips untuk pemandu dan kru kapal</li>
+                <li>Tips untuk pemandu, dive master, dan kru kapal</li>
             </ul>
         `;
 
         const fasilitasText = `
-            <p>- Transportas:
+            <p>- Transportasi:</p>
             <ul>
                 <li>Transfer dari/ke Bandara Komodo, Labuan Bajo</li>
-                <li>Kapal phinisi atau tradisional dengan fasilitas modern</li>
+                <li>Kapal phinisi atau tradisional dengan fasilitas romantis</li>
             </ul>
-            <p>- Akomodasi:
+            <p>- Akomodasi:</p>
             <ul>
-                <li>1 malam di hotel bintang 3 atau setara di Labuan Bajo</li>
+                <li>2 malam di hotel bintang 4 atau setara di Labuan Bajo</li>
                 <li>1 malam di kapal dengan kabin yang nyaman</li>
             </ul>
-            <p>- Makan:
+            <p>- Makan:</p>
             <ul>
-                <li>Makan pagi, siang, dan malam dengan menu lokal dan internasional</li>
+                <li>Makan pagi, siang, dan malam dengan menu romantis khusus</li>
             </ul>
-            <p>- Aktivitas:
+            <p>- Aktivitas:</p>
             <ul>
-                <li>Trekking di Pulau Komodo dan Pulau Rinca dengan pemandu berlisensi</li>
-                <li>Snorkeling di Pantai Pink dengan peralatan yang disediakan</li>
-                <li>Kunjungan ke desa nelayan lokal untuk pengalaman budaya</li>
+                <li>Diving dan snorkeling di spot-spot romantis seperti Pink Beach dan Batu Bolong</li>
+                <li>Sunset di Pulau Padar</li>
+                <li>Malam romantis dengan makan malam di tepi pantai</li>
             </ul>
-            <p>- Layanan Tambahan:
+            <p>- Layanan Tambahan:</p>
             <ul>
-                <li>Pemandu wisata profesional yang berpengalaman</li>
-                <li>Peralatan snorkeling lengkap</li>
+                <li>Pemandu wisata profesional dan dive master yang berpengalaman</li>
+                <li>Peralatan snorkeling dan diving lengkap</li>
                 <li>Air minum selama perjalanan</li>
                 <li>P3K dan perlengkapan keselamatan di kapal</li>
             </ul>
         `;
+
 
         const buttons = document.querySelectorAll('.buton');
 
@@ -441,7 +427,7 @@
                         document.getElementById('content').innerHTML = fasilitasText;
                         break;
                     default:
-                        document.getElementById('content').innerHTML = aboutText;
+                        document.getElementById('content').innerHTML = '';
                         break;
                 }
             });

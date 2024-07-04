@@ -52,7 +52,7 @@
   background-color: #0056b3;
 }
 
-.paket {
+.button-js {
   margin-top: 2%;
   margin-left: 6%;
 }
@@ -76,8 +76,23 @@
   cursor: pointer;
 }
 
+.input-Jumlah {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+.input-group .btn {
+  width: 40px;
+}
+
+.input-group .form-control {
+  max-width: 60px;
+}
+
 .content {
-  margin-bottom: 5rem;
   margin-top: 2%;
   padding-left: 6%;
   padding-right: 48%;
@@ -144,4 +159,8 @@
 .content h3 {
   margin: 0;
   font-size: 14px;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=paketwisata.css.map */

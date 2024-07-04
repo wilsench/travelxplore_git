@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Detail</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/checkout.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container1 mt-5">
+        <h1 class="check">Checkout Detail</h1>
+        <form>
+            <div class="mb-3">
+                <label for="namaLengkap" class="fs-5 fw-semibold form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namaLengkap">
+            </div>
+            <div class="b-3">
+                <label for="email" class="fs-5 fw-semibold form-label">Alamat Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="b-3">
+                <label for="telepon" class="fs-5 fw-semibold form-label">Telepon</label>
+                <input type="text" class="form-control" id="telepon">
+            </div>
+            <div class="b-3">
+                <label for="provinsi" class="fs-5 fw-semibold form-label">Provinsi</label>
+                <input type="text" class="form-control" id="provinsi">
+            </div>
+            <div class="mb-3">
+                <label for="kabupaten" class="fs-5 fw-semibold form-label">Kabupaten / Kota</label>
+                <input type="text" class="form-control" id="kabupaten">
+            </div>
+            <div class="mb-3">
+                <label for="alamatLengkap" class="fs-5 fw-semibold form-label">Alamat Lengkap</label>
+                <input type="text" class="form-control" id="alamatLengkap">
+            </div>
+            <div class="mb-3">
+                <label for="namaPaket" class="fs-5 fw-semibold form-label">Nama Paket Wisata</label>
+                <input type="text" class="form-control" id="namaPaket" readonly>
+            </div>
+            <div class="mb-3">
+                <h4>Pelayanan Paket Wisata</h4>
+                <label for="hargaTransportasi" class="fs-5 fw-semibold form-label">Transportasi</label>
+                <input type="text" class="form-control" id="hargaTransportasi" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="hargaMakanan" class="fs-5 fw-semibold form-label">Makanan</label>
+                <input type="text" class="form-control" id="hargaMakanan" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="hargaPenginapan" class="fs-5 fw-semibold form-label">Penginapan</label>
+                <input type="text" class="form-control" id="hargaPenginapan" readonly>
+            </div>
+        </form>
+    </div>
+
+    <div class="container2">
+        <div>
+            <h4>Your Order</h4>
+        </div>
+        <diV>
+            <h5>Paket</h5>
+            <h5>Subtotal</h5>
+        </diV>
+        <div class="mb-3">
+            <label for="hargaPaket" class="form-label">Harga Paket Wisata</label>
+            <input type="text" class="form-control" id="hargaPaket" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="jumlahPeserta" class="form-label">Jumlah Peserta</label>
+            <input type="text" class="form-control" id="jumlahPeserta" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="totalHarga" class="form-label">Total Harga</label>
+            <input type="text" class="form-control" id="totalHarga" readonly>
+        </div>
+        <div>
+            <h5>Transfer Bank Manual</h5>
+        </div>
+        <diV>
+            <p>Lakukan pembayaran Anda langsung ke rekening bank kami, 
+                nomor Rekening akan ditampilkan setelah proses ini. 
+                Pesanan Anda akan dikirim setelah menerima pembayaran</p>
+        </diV>
+        <button type="button" class="btn btn-primary w-100" onclick="placeOrder()">Place Order</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../public/js/checkout.js"></script>
+</body>
+</html>

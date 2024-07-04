@@ -14,7 +14,7 @@
     
     <!-- SplideJS -->
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
-    <title>Paket Wisata Pulau Komodo</title>
+    <title>Paket Wisata Pulau Komod</title>
 </head>
 <body>
     <nav id="nav" class="navbar-main bg-body-tertiary d-flex">
@@ -28,8 +28,8 @@
           </a>
         </div>
         <div class="nav-menu d-flex">
-            <a href="index.html#hero" class="text-soft-black">Home</a>
-            <a href="index.html#galeri" class="text-soft-black">Galeri</a>
+            <a href="" class="text-soft-black">Home</a>
+            <a href="" class="text-soft-black">Galeri</a>
             <div class="dropdown">
                 <a class="text-soft-black dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paket</a>
                 <ul class="dropdown-menu p-3">
@@ -82,14 +82,14 @@
             
         </div>
         <div class="signin">
-            <a href="signin.html" class="btn btn-main fw-semibold">Sign In</a>
+            <a href="" class="btn btn-main fw-semibold">Sign In</a>
         </div>
     </nav>
 
     <div class="div-jarak-atas">
         <p class="fs-2 fw-bold text-center">Paket Wisata</p>
-        <p class="fs-2 fw-bold text-center">Pulau Komodo</p>
-        <p class="text-body-tertiary text-center">Treaking, Snarkeling, Kunjungan Desa Lokal</p>
+        <p class="fs-2 fw-bold text-center">Snorkeling dan Diving</p>
+        <p class="text-body-tertiary text-center">Snorkeling dan diving di beberapa titik terbaik</p>
     </div>
 
     <div class="container">
@@ -109,28 +109,28 @@
           <div class="col-12 col-md-4">
             <div class="sales">
               <div class="fw-medium fs-5">Terjual</div>
-              <div>1121</div>
+              <div>1534</div>
             </div>
           </div>
         </div>
       </div>
 
     <div class="mt-5">
-        <div class="row justify-content-center w-100">
+        <div class="row justify-content-center">
             <div class="col-md-7">
-                <img src="../public/assets/komodo.jpg" class="img-fluid rounded custom-img" alt="Komodo">
+                <img src="../public/assets/Snorkeling.jpg" class="img-fluid rounded custom-img" alt="Komodo">
             </div>
             <div class="between col-md-4 ms-md-3">
                 <div class="info-box p-4 rounded">
-                    <h5 class="mb-4">Paket Wisata Pulau Komodo</h5>
+                    <h5 class="mb-4">Paket Wisata Snorkeling dan Diving</h5>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Durasi: 2 - 3 hari
+                        <i class="bi bi-play-circle-fill"></i> Durasi : 3-4 hari
                     </div>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Rute: Labuan Bajo - Pulau Komodo - Pulau Rinca - Pantai Pink
+                        <i class="bi bi-play-circle-fill"></i> Rute : Labuan Bajo - Pulau Komodo - Pulau Rinca - Manta Point - Batu Bolong
                     </div>
                     <div class="info-item mb-4">
-                        <i class="bi bi-play-circle-fill"></i> Aktivitas: Trekking untuk melihat komodo, snorkeling di Pantai Pink, dan mengunjungi desa nelayan lokal.
+                        <i class="bi bi-play-circle-fill"></i> Aktivitas : Diving di spot-spot terbaik, snorkeling di terumbu karang, mengunjungi desa nelayan lokal
                     </div>
 
                     <!-- Menuju ke Checkout -->
@@ -148,24 +148,20 @@
                     </div>
                     <div class="mt-3 hidden">
                         <div class="mb-3">
-                            <label for="namaPaket" class="form-label">Nama Paket Wisata</label>
-                            <input type="text" class="form-control" id="namaPaket" readonly>
-                        </div>
-                        <div class="mb-3">
                             <label for="hargaTransportasi" class="form-label">Transportasi</label>
-                            <input type="text" class="form-control" id="hargaTransportasi" value="2000000" readonly>
+                            <input type="text" class="form-control" id="hargaTransportasi" value="2500000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaMakanan" class="form-label">Makanan</label>
-                            <input type="text" class="form-control" id="hargaMakanan" value="1200000" readonly>
+                            <input type="text" class="form-control" id="hargaMakanan" value="1500000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaPenginapan" class="form-label">Penginapan</label>
-                            <input type="text" class="form-control" id="hargaPenginapan" value="3000000" readonly>
+                            <input type="text" class="form-control" id="hargaPenginapan" value="3500000" readonly>
                         </div>
                     </div>
                     <div class="mt-3">
-                        <button class="btn btn-primary w-100" onclick="beliPaket('Pulau Komodo', 6200000)">Beli Paket</button>
+                        <button class="btn btn-primary w-100" onclick="beliPaket('Snorkeling dan Diving', 750000)">Beli Paket</button>
                     </div>
                 </div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -173,11 +169,12 @@
                 </div>
                 <!-- ||||||||||||||||||-->
 
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="button-js">
+    <div class="paket">
         <button id="aboutBtn" class="buton fw-bolder text-center btn btn-secondary">About</button>
         <button id="jadwalBtn" class="buton fw-bolder text-center btn btn-secondary">Jadwal</button>
         <button id="hargaBtn" class="buton fw-bolder text-center btn btn-secondary">Harga</button>
@@ -186,23 +183,9 @@
 
     <div class="content fw-medium" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
-        <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
-            <br>
-
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
         // Jumlah Peserta
         $(document).ready(function() {
             const MIN_JUMLAH = 1;
@@ -239,17 +222,23 @@
          });
 
         const aboutText = `
-            <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
+            <p>Rasakan pengalaman luar biasa menjelajahi dunia bawah laut yang menakjubkan 
+                dan kehidupan laut yang beraneka ragam dengan paket wisata snorkeling dan 
+                diving eksklusif ini. Pulau Komodo dan sekitarnya, bagian dari Taman Nasional 
+                Komodo, tidak hanya rumah bagi komodo legendaris tetapi juga menyimpan keindahan 
+                bawah laut yang menakjubkan. Anda akan diajak ke berbagai titik snorkeling dan 
+                diving seperti Manta Point dan Batu Bolong, terkenal dengan terumbu karang spektakuler 
+                dan kehidupan laut melimpah. Dipandu oleh dive master berpengalaman, Anda akan menjelajahi 
+                terumbu karang, berenang bersama ikan berwarna-warni, dan mungkin melihat pari manta yang megah. </p>
             <br>
 
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
+            <p>Petualangan ini mencakup kunjungan ke Pulau Komodo dan Pulau Rinca untuk trekking 
+                melihat komodo dalam habitat alami mereka, serta kunjungan ke desa nelayan lokal 
+                untuk wawasan tentang kehidupan dan budaya setempat. Dengan kombinasi petualangan 
+                bawah laut yang mendebarkan dan penjelajahan darat yang informatif, paket ini 
+                menawarkan pengalaman liburan yang lengkap dan tak terlupakan. Bergabunglah 
+                dengan kami untuk menciptakan kenangan indah sambil menjelajahi keajaiban 
+                alam dan kehidupan laut di salah satu destinasi paling eksotis di dunia.</p>
         `;
 
         const jadwalText = `
@@ -296,7 +285,7 @@
                 <span class="month">02</span>
                 </div>
                 <div class="event-info ms-3">
-                <h2 class="event-title">Pulau Komodo dan Pantai Pink</h2>
+                <h2 class="event-title">Pulau Komodo dan Manta Point</h2>
                 </div>
             </div>
 
@@ -304,13 +293,14 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo. Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.</h3>
+                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo. 
+                            Sesi diving di spot diving Pulau Komodo untuk melihat terumbu karang dan kehidupan laut.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Makan siang di atas kapal. Snorkeling dan bersantai di Pantai Pink, menikmati keindahan pasir merah muda dan kehidupan bawah laut yang menakjubkan.</h3>
+                        <h3>Siang :Makan siang di atas kapal. Diving atau snorkeling di Manta Point untuk melihat ikan pari manta.</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -333,7 +323,7 @@
                 <span class="month">03</span>
                 </div>
                 <div class="event-info ms-3">
-                <h2 class="event-title">Pulau Rinca dan Desa Nelayan Lokal</h2>
+                <h2 class="event-title">Pulau Rinca dan Batu Bolong</h2>
                 </div>
             </div>
 
@@ -341,13 +331,53 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Sarapan di kapal. Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
+                        <h3>Pagi: Sarapan di kapal.
+                            Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Makan siang di atas kapal.</h3>
+                        <h3>Siang : Makan siang di atas kapal.
+                            Diving di Batu Bolong, salah satu spot diving terbaik di Taman Nasional Komodo</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-city"></i></div>
+                    <div class="border-content">
+                        <h3>Sore : Snorkeling dan bersantai di sekitar Batu Bolong</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="border-content">
+                        <h3>Malam : Makan malam di atas kapal dan bermalam di perairan dekat Labuan Bajo.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card d-flex align-items-center">
+                <div class="date">
+                <span class="day">Day</span>
+                <span class="month">04</span>
+                </div>
+                <div class="event-info ms-3">
+                <h2 class="event-title">Desa Nelayan Lokal dan Kembali ke Labuan Bajo</h2>
+                </div>
+            </div>
+
+            <div class="border1">
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-plane"></i></div>
+                    <div class="border-content">
+                        <h3>Pagi: Pagi: Sarapan di kapal.
+                            Kunjungan ke desa nelayan lokal untuk melihat kehidupan sehari-hari penduduk setempat dan belajar tentang budaya mereka.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="border-content">
+                        <h3>Siang : Siang: Makan siang di atas kapal.</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -366,50 +396,52 @@
         `;
 
         const hargaText = `
-            <p>- Harga Paket: Rp 3.500.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
-            <p>- Termasuk:
+            <p>- Harga Paket: Rp 5.500.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
+            <p>- Termasuk:</p>
             <ul>
                 <li>Transportasi laut dengan kapal phinisi/tradisional</li>
-                <li>Akomodasi di kapal dan hotel (1 malam di hotel, 1 malam di kapal)</li>
+                <li>Akomodasi di kapal dan hotel (1 malam di hotel, 2 malam di kapal)</li>
                 <li>Makan pagi, siang, dan malam selama perjalanan</li>
                 <li>Tiket masuk Taman Nasional Komodo</li>
-                <li>Pemandu wisata berpengalaman</li>
-                <li>Peralatan snorkeling</li>
+                <li>Pemandu wisata dan dive master berpengalaman</li>
+                <li>Peralatan snorkeling dan diving</li>
             </ul>
-            <p>- Tidak Termasuk:
+            <p>- Tidak Termasuk:</p>
             <ul>
                 <li>Penerbangan ke/dari Labuan Bajo</li>
                 <li>Asuransi perjalanan</li>
                 <li>Pengeluaran pribadi (belanja suvenir, minuman tambahan, dll.)</li>
-                <li>Tips untuk pemandu dan kru kapal</li>
+                <li>Tips untuk pemandu, dive master, dan kru kapal</li>
             </ul>
+
         `;
 
         const fasilitasText = `
-            <p>- Transportas:
+            <p>- Transportasi:</p>
             <ul>
                 <li>Transfer dari/ke Bandara Komodo, Labuan Bajo</li>
                 <li>Kapal phinisi atau tradisional dengan fasilitas modern</li>
             </ul>
-            <p>- Akomodasi:
+            <p>- Akomodasi:</p>
             <ul>
                 <li>1 malam di hotel bintang 3 atau setara di Labuan Bajo</li>
-                <li>1 malam di kapal dengan kabin yang nyaman</li>
+                <li>2 malam di kapal dengan kabin yang nyaman</li>
             </ul>
-            <p>- Makan:
+            <p>- Makan:</p>
             <ul>
                 <li>Makan pagi, siang, dan malam dengan menu lokal dan internasional</li>
             </ul>
-            <p>- Aktivitas:
+            <p>- Aktivitas:</p>
             <ul>
-                <li>Trekking di Pulau Komodo dan Pulau Rinca dengan pemandu berlisensi</li>
-                <li>Snorkeling di Pantai Pink dengan peralatan yang disediakan</li>
+                <li>Diving di Pulau Komodo, Manta Point, dan Batu Bolong dengan dive master berlisensi</li>
+                <li>Snorkeling di spot-spot terbaik dengan peralatan yang disediakan</li>
+                <li>Trekking di Pulau Rinca dengan pemandu berlisensi</li>
                 <li>Kunjungan ke desa nelayan lokal untuk pengalaman budaya</li>
             </ul>
-            <p>- Layanan Tambahan:
+            <p>- Layanan Tambahan:</p>
             <ul>
-                <li>Pemandu wisata profesional yang berpengalaman</li>
-                <li>Peralatan snorkeling lengkap</li>
+                <li>Pemandu wisata profesional dan dive master yang berpengalaman</li>
+                <li>Peralatan snorkeling dan diving lengkap</li>
                 <li>Air minum selama perjalanan</li>
                 <li>P3K dan perlengkapan keselamatan di kapal</li>
             </ul>
@@ -441,7 +473,7 @@
                         document.getElementById('content').innerHTML = fasilitasText;
                         break;
                     default:
-                        document.getElementById('content').innerHTML = aboutText;
+                        document.getElementById('content').innerHTML = '';
                         break;
                 }
             });

@@ -28,8 +28,8 @@
           </a>
         </div>
         <div class="nav-menu d-flex">
-            <a href="index.html#hero" class="text-soft-black">Home</a>
-            <a href="index.html#galeri" class="text-soft-black">Galeri</a>
+            <a href="" class="text-soft-black">Home</a>
+            <a href="" class="text-soft-black">Galeri</a>
             <div class="dropdown">
                 <a class="text-soft-black dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paket</a>
                 <ul class="dropdown-menu p-3">
@@ -82,14 +82,14 @@
             
         </div>
         <div class="signin">
-            <a href="signin.html" class="btn btn-main fw-semibold">Sign In</a>
+            <a href="" class="btn btn-main fw-semibold">Sign In</a>
         </div>
     </nav>
 
     <div class="div-jarak-atas">
         <p class="fs-2 fw-bold text-center">Paket Wisata</p>
-        <p class="fs-2 fw-bold text-center">Pulau Komodo</p>
-        <p class="text-body-tertiary text-center">Treaking, Snarkeling, Kunjungan Desa Lokal</p>
+        <p class="fs-2 fw-bold text-center">Keluarga</p>
+        <p class="text-body-tertiary text-center">Mengunjungi pulau-pulau dengan fasilitas yang mendukung kenyamanan keluarga</p>
     </div>
 
     <div class="container">
@@ -109,28 +109,28 @@
           <div class="col-12 col-md-4">
             <div class="sales">
               <div class="fw-medium fs-5">Terjual</div>
-              <div>1121</div>
+              <div>905</div>
             </div>
           </div>
         </div>
       </div>
 
     <div class="mt-5">
-        <div class="row justify-content-center w-100">
+        <div class="row justify-content-center">
             <div class="col-md-7">
-                <img src="../public/assets/komodo.jpg" class="img-fluid rounded custom-img" alt="Komodo">
+                <img src="../public/assets/Keluarga.jpg" class="img-fluid rounded custom-img" alt="Komodo">
             </div>
             <div class="between col-md-4 ms-md-3">
                 <div class="info-box p-4 rounded">
-                    <h5 class="mb-4">Paket Wisata Pulau Komodo</h5>
+                    <h5 class="mb-4">Paket Wisata Keluarga</h5>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Durasi: 2 - 3 hari
+                        <i class="bi bi-play-circle-fill"></i> Durasi : 4 hari
                     </div>
                     <div class="info-item mb-3">
-                        <i class="bi bi-play-circle-fill"></i> Rute: Labuan Bajo - Pulau Komodo - Pulau Rinca - Pantai Pink
+                        <i class="bi bi-play-circle-fill"></i> Rute : Rute: Labuan Bajo - Pulau Komodo - Pulau Rinca - Pantai Pink - Pulau Kanawa
                     </div>
                     <div class="info-item mb-4">
-                        <i class="bi bi-play-circle-fill"></i> Aktivitas: Trekking untuk melihat komodo, snorkeling di Pantai Pink, dan mengunjungi desa nelayan lokal.
+                        <i class="bi bi-play-circle-fill"></i> Trekking untuk melihat komodo, snorkeling di Pantai Pink, bermain di pantai, dan mengunjungi desa nelayan lokal
                     </div>
 
                     <!-- Menuju ke Checkout -->
@@ -148,24 +148,20 @@
                     </div>
                     <div class="mt-3 hidden">
                         <div class="mb-3">
-                            <label for="namaPaket" class="form-label">Nama Paket Wisata</label>
-                            <input type="text" class="form-control" id="namaPaket" readonly>
-                        </div>
-                        <div class="mb-3">
                             <label for="hargaTransportasi" class="form-label">Transportasi</label>
-                            <input type="text" class="form-control" id="hargaTransportasi" value="2000000" readonly>
+                            <input type="text" class="form-control" id="hargaTransportasi" value="6000000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaMakanan" class="form-label">Makanan</label>
-                            <input type="text" class="form-control" id="hargaMakanan" value="1200000" readonly>
+                            <input type="text" class="form-control" id="hargaMakanan" value="3600000" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="hargaPenginapan" class="form-label">Penginapan</label>
-                            <input type="text" class="form-control" id="hargaPenginapan" value="3000000" readonly>
+                            <input type="text" class="form-control" id="hargaPenginapan" value="9000000" readonly>
                         </div>
                     </div>
                     <div class="mt-3">
-                        <button class="btn btn-primary w-100" onclick="beliPaket('Pulau Komodo', 6200000)">Beli Paket</button>
+                        <button class="btn btn-primary w-100" onclick="beliPaket('Keluarga', 1860000)">Beli Paket</button>
                     </div>
                 </div>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -173,6 +169,7 @@
                 </div>
                 <!-- ||||||||||||||||||-->
 
+                </div>
             </div>
         </div>
     </div>
@@ -186,27 +183,13 @@
 
     <div class="content fw-medium" id="content">
         <!-- Konten akan diisi oleh JavaScript -->
-        <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
-            <br>
-
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-        // Jumlah Peserta
+        // Jumlah Inputan peserta
         $(document).ready(function() {
-            const MIN_JUMLAH = 1;
-            const MAX_JUMLAH = 4;
+            const MIN_JUMLAH = 3;
+            const MAX_JUMLAH = 10;
 
             let jumlah = MIN_JUMLAH;
             $('#jumlah').val(jumlah);
@@ -233,23 +216,32 @@
             });
         });
 
+        // |||||||||||||||||||||||
+
+
         document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('content').innerHTML = aboutText;
         document.getElementById('aboutBtn').classList.add('active');
          });
 
         const aboutText = `
-            <p>Nikmati pengalaman unik menjelajahi habitat asli komodo, kadal terbesar di dunia, 
-            dengan paket wisata eksklusif yang dirancang untuk membawa Anda ke jantung keajaiban alam ini. 
-            Pulau Komodo dan Pulau Rinca, yang merupakan bagian dari Taman Nasional Komodo, adalah rumah bagi ribuan komodo dan berbagai 
-            flora dan fauna yang eksotis. </p>
+            <p>Nikmati petualangan keluarga yang menyenangkan dan edukatif di Pulau Komodo dengan 
+                paket wisata khusus yang dirancang untuk semua usia. Mulailah perjalanan Anda di 
+                Labuan Bajo, di mana Anda akan disambut oleh pemandu wisata berpengalaman yang 
+                siap membawa Anda menjelajahi keajaiban Taman Nasional Komodo. Dari trekking di 
+                Pulau Komodo dan Pulau Rinca untuk melihat komodo dalam habitat alami mereka, 
+                hingga snorkeling di Pantai Pink dan Pulau Kanawa yang memukau, setiap aktivitas 
+                dirancang untuk memberikan pengalaman yang berharga dan menyenangkan bagi seluruh 
+                anggota keluarga.</p>
             <br>
 
-            <p>Dalam paket ini, Anda akan memulai petualangan dengan perjalanan ke Pulau Komodo, 
-            di mana Anda akan disambut oleh pemandu lokal yang berpengalaman. Trekking di Pulau Komodo menawarkan kesempatan untuk 
-            melihat komodo dalam habitat alami mereka. Anda akan melintasi jalur-jalur yang menantang namun mempesona, melalui hutan, savana, d
-            an pantai, sambil belajar tentang perilaku dan ekosistem unik komodo dari pemandu ahli kami. Setiap langkah akan membawa 
-            Anda lebih dekat ke salah satu makhluk purba yang paling mengagumkan di planet ini.</p>
+            <p>Selama perjalanan, Anda juga akan mengunjungi desa nelayan lokal untuk belajar 
+                tentang kehidupan sehari-hari dan budaya setempat. Aktivitas ini memberikan 
+                wawasan yang mendalam dan memperkaya pengalaman wisata Anda. Dengan kombinasi 
+                dari petualangan darat yang mendebarkan dan kegiatan laut yang seru, paket 
+                wisata keluarga ini menawarkan kesempatan sempurna untuk menciptakan kenangan 
+                indah bersama orang-orang tercinta sambil menikmati keindahan alam dan 
+                keanekaragaman hayati di salah satu destinasi paling eksotis di dunia.</p>
         `;
 
         const jadwalText = `
@@ -285,7 +277,7 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-utensils"></i></div>
                     <div class="border-content">
-                        <h3>Malam : Makan malam di restoran lokal dan kembali ke hotel untuk istirahat.</h3>
+                        <h3>Malam : Makan malam di restoran lokal dan kembali ke hotel untuk istirahat</h3>
                     </div>
                 </div>
             </div>
@@ -304,19 +296,21 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo. Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.</h3>
+                        <h3>Pagi : Berangkat dari pelabuhan Labuan Bajo menuju Pulau Komodo.
+                            Trekking di Pulau Komodo untuk melihat komodo dan fauna lainnya.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Makan siang di atas kapal. Snorkeling dan bersantai di Pantai Pink, menikmati keindahan pasir merah muda dan kehidupan bawah laut yang menakjubkan.</h3>
+                        <h3>Siang: Makan siang di atas kapal.
+                            Snorkeling dan bermain di Pantai Pink, menikmati keindahan pasir merah muda dan kehidupan bawah laut yang menakjubkan</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-city"></i></div>
                     <div class="border-content">
-                        <h3>Sore : Kembali ke kapal dan berlayar menuju Pulau Rinca.</h3>
+                        <h3>Sore : Kembali ke kapal dan berlayar menuju Pulau Rinca</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -341,13 +335,53 @@
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-plane"></i></div>
                     <div class="border-content">
-                        <h3>Pagi : Sarapan di kapal. Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
+                        <h3>Pagi: Sarapan di kapal.
+                            Trekking di Pulau Rinca untuk melihat komodo dan menikmati pemandangan alam yang indah.</h3>
                     </div>
                 </div>
                 <div class="border-main">
                     <div class="border-icon"><i class="fas fa-hotel"></i></div>
                     <div class="border-content">
-                        <h3>Siang : Makan siang di atas kapal.</h3>
+                        <h3>Siang : Makan siang di atas kapal.
+                            Kunjungan ke desa nelayan lokal untuk melihat kehidupan sehari-hari penduduk setempat dan belajar tentang budaya mereka.</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-city"></i></div>
+                    <div class="border-content">
+                        <h3>Sore : Kembali ke Labuan Bajo</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="border-content">
+                        <h3>Malam: Makan malam di Labuan Bajo dan kembali ke hotel untuk istirahat.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card d-flex align-items-center">
+                <div class="date">
+                <span class="day">Day</span>
+                <span class="month">04</span>
+                </div>
+                <div class="event-info ms-3">
+                <h2 class="event-title">Pulau Kanawa dan Kembali ke Labuan Bajo</h2>
+                </div>
+            </div>
+
+            <div class="border1">
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-plane"></i></div>
+                    <div class="border-content">
+                        <h3>Berangkat menuju Pulau Kanawa. 
+                            Snorkeling di perairan sekitar Pulau Kanawa dan bermain di pantai</h3>
+                    </div>
+                </div>
+                <div class="border-main">
+                    <div class="border-icon"><i class="fas fa-hotel"></i></div>
+                    <div class="border-content">
+                        <h3>Siang : Makan siang di pulau.</h3>
                     </div>
                 </div>
                 <div class="border-main">
@@ -363,50 +397,53 @@
                     </div>
                 </div>
             </div>
+
         `;
 
         const hargaText = `
-            <p>- Harga Paket: Rp 3.500.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
-            <p>- Termasuk:
+            <p>- Harga Paket: Rp 4.000.000 per orang (harga dapat bervariasi tergantung pada jumlah peserta dan musim)</p>
+            <p>- Termasuk:</p>
             <ul>
                 <li>Transportasi laut dengan kapal phinisi/tradisional</li>
-                <li>Akomodasi di kapal dan hotel (1 malam di hotel, 1 malam di kapal)</li>
+                <li>Akomodasi di kapal dan hotel (2 malam di hotel, 1 malam di kapal)</li>
                 <li>Makan pagi, siang, dan malam selama perjalanan</li>
                 <li>Tiket masuk Taman Nasional Komodo</li>
                 <li>Pemandu wisata berpengalaman</li>
                 <li>Peralatan snorkeling</li>
             </ul>
-            <p>- Tidak Termasuk:
+            <p>- Tidak Termasuk:</p>
             <ul>
                 <li>Penerbangan ke/dari Labuan Bajo</li>
                 <li>Asuransi perjalanan</li>
                 <li>Pengeluaran pribadi (belanja suvenir, minuman tambahan, dll.)</li>
                 <li>Tips untuk pemandu dan kru kapal</li>
             </ul>
+
         `;
 
         const fasilitasText = `
-            <p>- Transportas:
+            <p>- Transportasi:</p>
             <ul>
                 <li>Transfer dari/ke Bandara Komodo, Labuan Bajo</li>
                 <li>Kapal phinisi atau tradisional dengan fasilitas modern</li>
             </ul>
-            <p>- Akomodasi:
+            <p>- Akomodasi:</p>
             <ul>
-                <li>1 malam di hotel bintang 3 atau setara di Labuan Bajo</li>
+                <li>2 malam di hotel bintang 3 atau setara di Labuan Bajo</li>
                 <li>1 malam di kapal dengan kabin yang nyaman</li>
             </ul>
-            <p>- Makan:
+            <p>- Makan:</p>
             <ul>
                 <li>Makan pagi, siang, dan malam dengan menu lokal dan internasional</li>
             </ul>
-            <p>- Aktivitas:
+            <p>- Aktivitas:</p>
             <ul>
                 <li>Trekking di Pulau Komodo dan Pulau Rinca dengan pemandu berlisensi</li>
-                <li>Snorkeling di Pantai Pink dengan peralatan yang disediakan</li>
+                <li>Snorkeling di Pantai Pink dan Pulau Kanawa dengan peralatan yang disediakan</li>
+                <li>Bermain di pantai dan menikmati aktivitas keluarga</li>
                 <li>Kunjungan ke desa nelayan lokal untuk pengalaman budaya</li>
             </ul>
-            <p>- Layanan Tambahan:
+            <p>- Layanan Tambahan:</p>
             <ul>
                 <li>Pemandu wisata profesional yang berpengalaman</li>
                 <li>Peralatan snorkeling lengkap</li>
@@ -441,7 +478,7 @@
                         document.getElementById('content').innerHTML = fasilitasText;
                         break;
                     default:
-                        document.getElementById('content').innerHTML = aboutText;
+                        document.getElementById('content').innerHTML = '';
                         break;
                 }
             });
