@@ -97,6 +97,26 @@ h1,h2,h3,h4,h5,p {
     background-image: url('../assets/paket_romantis.png');
 }
 
+.logo {
+    width: 100%;
+    a {
+        width: max-content;
+        display: flex;
+        gap: 1rem;
+
+        .text-logo {
+            h2 {
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 .navbar-main {
     z-index: 100;
     position: sticky;
@@ -193,16 +213,19 @@ h1,h2,h3,h4,h5,p {
 }
 
 #hero {
+    width: 100%;
     scroll-margin-top: 150px;
     display: flex;
     gap: 5rem;
     padding: 5rem 10rem;
     .hero-start {
+        width: 50%;
         img {
             object-fit: cover;
         }
     }
     .hero-end {
+        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -263,6 +286,8 @@ h1,h2,h3,h4,h5,p {
             .sponsor-image {
                 img {
                     // filter: grayscale(1);
+                    width: 300px;
+                    height: 30px;
                     transition: .2s;
                 }
                 img:hover {
@@ -285,7 +310,7 @@ h1,h2,h3,h4,h5,p {
 
     display: flex;
     justify-content: space-between;
-    padding: 10rem 10rem;
+    padding: 10rem 5rem;
     margin-bottom: 2rem;
 
     .start {
@@ -364,6 +389,7 @@ h1,h2,h3,h4,h5,p {
             border-radius: 10px;
             padding: 2rem;
             font-size: 14px;
+            width: 48%;
 
             h3 {
                 font-size: 20px;
@@ -386,7 +412,7 @@ h1,h2,h3,h4,h5,p {
 
 #paket {
     scroll-margin-top: 150px;
-    padding: 2rem 10rem;
+    padding: 2rem 5rem;
     height: 100vh;
     .paket-start {
         h2 {
@@ -410,15 +436,15 @@ h1,h2,h3,h4,h5,p {
             .paket-card {
                 user-select: none;
                 margin-top: 2rem;
-                max-width: 500px;
-                min-width: 500px;
+                max-width: 430px;
+                min-width: 430px;
                 border-radius: 10px;
                 background-blend-mode: multiply;
                 background-color: rgba(128, 128, 128, 0.5);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position-y: 20%;
-                min-height: 220px;
+                min-height: 200px;
                 justify-content: end;
                 padding: 1.5rem;
                 color: white;
@@ -442,6 +468,157 @@ h1,h2,h3,h4,h5,p {
             .paket-card {
                 background-color: white;
                 transition: .2s;
+            }
+        }
+    }
+}
+
+#signin {
+    background-color: white;
+    min-height: 100vh;
+    .signin-start {
+        padding: 3rem;
+        gap: 3rem;
+        .end {
+            padding:0 5rem;
+            .back-button {
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .form-content {
+                margin-top: 1.5rem;
+                .header {
+                    gap: 10px;
+                    h4 {
+                        font-size: 32px;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $gray;
+                    }
+                }
+
+                .form {
+                    margin-top: 3rem;
+
+                    .form-check {
+                        padding-left: 0 !important;
+                    }
+
+                    input {
+                        border-radius: 55rem;
+                        margin-left: 0;
+                        padding: 10px 20px;
+                    }
+
+                    .forgot_pwd {
+                        color: gray;
+                        font-size: 14px;
+                    }
+                    .btn-warning {
+                        border-radius: 55rem;
+                        color: white;
+                    }
+
+                    #errorMail {
+                        font-size: 14px;
+                    }
+                    #errorPwd {
+                        font-size: 14px;
+                    }
+
+                    .error {
+                        border: 1px solid red !important;
+                    }
+
+                    .hidden {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .signin-end {
+        background-image: url('../assets/signin.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+#admin {
+    min-height: 100vh;
+
+    .bar-active {
+        background-color: $main-blue;
+        font-weight: 500 !important;
+        color: white !important;
+    }
+
+    .sidebar {
+        gap: 4rem;
+        min-width: 280px;
+        max-width: 280px;
+        margin-left: 0px;
+        padding: 4rem 2.5rem;
+        .end {
+            span {
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                color: $gray;
+                margin-bottom: 2rem;
+            }
+            a {
+                i {
+                    font-size: 20px;
+                }
+                font-size: 16px;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-weight: 400;
+                color: $gray;
+            }
+            a:hover {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .content {
+        padding: 4rem;
+        
+        .end {
+            margin-top: 4rem;
+
+            .info {
+                display: flex;
+                justify-content: start;
+                align-items: end;
+                font-weight: 400;
+                border-radius: 10px;
+                gap: 20px;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 28px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: $lite-blue;
+                    border-radius: 55rem;
+                    color: $main-blue;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 14px;
+                }
             }
         }
     }
