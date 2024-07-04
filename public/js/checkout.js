@@ -6,8 +6,9 @@ $(document).ready(function() {
     const hargaMakanan = parseFloat(localStorage.getItem('hargaMakanan'));
     const hargaPenginapan = parseFloat(localStorage.getItem('hargaPenginapan'));
 
-    const totalHarga = (jumlahPeserta * (hargaTransportasi + hargaMakanan + hargaPenginapan));
+    const totalHarga = jumlahPeserta * (hargaTransportasi + hargaMakanan + hargaPenginapan);
 
+    $('#namaPaket').val(paket); // Menampilkan nama paket
     $('#jumlahPeserta').val(jumlahPeserta);
     $('#hargaPaket').val(harga);
     $('#hargaTransportasi').val(hargaTransportasi);
@@ -36,6 +37,11 @@ function placeOrder() {
     localStorage.setItem('provinsi', provinsi);
     localStorage.setItem('kabupaten', kabupaten);
     localStorage.setItem('alamatLengkap', alamatLengkap);
+    localStorage.setItem('jumlahPeserta', jumlahPeserta);
+    localStorage.setItem('hargaPaket', hargaPaket);
+    localStorage.setItem('hargaTransportasi', hargaTransportasi);
+    localStorage.setItem('hargaMakanan', hargaMakanan);
+    localStorage.setItem('hargaPenginapan', hargaPenginapan);
     localStorage.setItem('totalHarga', totalHarga);
 
     window.location.href = '../src/Rangkuman.html';

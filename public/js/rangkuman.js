@@ -32,3 +32,23 @@ function formatRupiah(angka) {
     }
     return "Rp " + angka.toLocaleString('id-ID');
 }
+
+// Fungsi untuk menghasilkan kode acak
+function generateKodePembayaran(length) {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * chars.length);
+        result += chars[randomIndex];
+    }
+    return result;
+}
+
+// Mendapatkan elemen HTML tempat kode akan ditampilkan
+const kodePembayaranElement = document.getElementById('kodePembayaran');
+
+// Menghasilkan kode acak dengan panjang 10 karakter
+const kodePembayaran = generateKodePembayaran(10);
+
+// Menampilkan kode acak di elemen HTML
+kodePembayaranElement.textContent = kodePembayaran;

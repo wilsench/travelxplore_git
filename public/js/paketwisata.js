@@ -10,4 +10,6 @@ function beliPaket(paket, harga) {
     localStorage.setItem('hargaMakanan', hargaMakanan);
     localStorage.setItem('hargaPenginapan', hargaPenginapan);
     window.location.href = '../src/Checkout.html';
+
+    $('#namaPaket').val(paket);
 }
