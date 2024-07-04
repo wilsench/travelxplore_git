@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="admin" class="d-flex">
-        <div class="sidebar bg-white d-flex flex-column">
+        <div id="sidebar" class="bg-white d-flex flex-column" style="margin-left: 0px;">
             <div class="start">
                 <div class="logo">
                     <a class="navbar-brand d-flex flex-column items-center" href="#">
@@ -33,9 +33,9 @@
                 <span>MENU</span>
                 <div class="d-flex flex-column gap-3">
                     <a href="" class="bar-active"><i class="bi bi-speedometer2 me-3"></i>Dashboard</a>
-                    <a href="" class=""><i class="bi bi-geo me-3"></i>Paket Wisata</a>
-                    <a href="" class=""><i class="bi bi-file-image me-3"></i>Galeri</a>
-                    <a href="" class="text-danger"><i class="bi bi-box-arrow-left me-3"></i>Logout</a>
+                    <a href="paket.html" class=""><i class="bi bi-geo me-3"></i>Paket Wisata</a>
+                    <a href="galeri.html" class=""><i class="bi bi-file-image me-3"></i>Galeri</a>
+                    <a href="../index.html" class="text-danger"><i class="bi bi-box-arrow-left me-3"></i>Logout</a>
                 </div>
             </div>
         </div>
@@ -48,18 +48,18 @@
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </nav>
-                    <h1 class="text-soft-black"><i class="bi bi-text-left me-2"></i>Hello, Admin 👋</h1>
+                    <h1 class="text-soft-black"><i onclick="toggleSidebar()" class="bi fs-2 bi-text-left me-2" style="cursor: pointer;"></i>Hello, Admin 👋</h1>
                 </div>
             </div>
             <div class="end">
-                <div class="info bg-white p-4 shadow-sm">
+                <div class="dashboard_info bg-white p-4 shadow-sm">
                     <div class="icon"><i class="bi bi-geo"></i></div>
                     <div class="d-flex flex-column justify-content-center">
                         <p>Paket Wisata Aktif</p>
                         <p class="fw-semibold">4</p>
                     </div>
                     <div class="d-flex min-h-100 align-items-end">
-                        <span>+1 Recently</span>
+                        <span class="recent_add">+1 Recently</span>
                     </div>
                 </div>
             </div>
@@ -68,5 +68,18 @@
     
     <!-- Bootstrap JS -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            const sideBar = document.getElementById('sidebar');
+
+            if (sideBar.style.marginLeft === '-280px') {
+                sideBar.style.marginLeft = '0px';
+            } else {
+                sideBar.style.marginLeft = '-280px';
+            }
+
+        }
+    </script>
 </body>
 </html>

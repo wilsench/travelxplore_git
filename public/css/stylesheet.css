@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, p {
   display: flex;
   flex-direction: column;
 }
-#hero .hero-end .end .sponsor-text {
+#hero .hero-end .end .sponsorship {
   display: block !important;
   color: #B0B0B0;
   font-size: 14px;
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, p {
   margin-bottom: 1rem;
 }
 #hero .hero-end .end .sponsor-image img {
-  width: 300px;
+  max-width: 300px;
   height: 30px;
   transition: 0.2s;
 }
@@ -499,21 +499,22 @@ h1, h2, h3, h4, h5, p {
   font-weight: 500 !important;
   color: white !important;
 }
-#admin .sidebar {
+#admin #sidebar {
+  transition: 0.7s;
   gap: 4rem;
   min-width: 280px;
   max-width: 280px;
   margin-left: 0px;
   padding: 4rem 2.5rem;
 }
-#admin .sidebar .end span {
+#admin #sidebar .end span {
   display: block;
   font-size: 12px;
   font-weight: 600;
   color: #B0B0B0;
   margin-bottom: 2rem;
 }
-#admin .sidebar .end a {
+#admin #sidebar .end a {
   font-size: 16px;
   text-decoration: none;
   padding: 10px 20px;
@@ -521,19 +522,20 @@ h1, h2, h3, h4, h5, p {
   font-weight: 400;
   color: #B0B0B0;
 }
-#admin .sidebar .end a i {
+#admin #sidebar .end a i {
   font-size: 20px;
 }
-#admin .sidebar .end a:hover {
+#admin #sidebar .end a:hover {
   font-weight: 500;
 }
 #admin .content {
   padding: 4rem;
 }
 #admin .content .end {
+  width: 100%;
   margin-top: 4rem;
 }
-#admin .content .end .info {
+#admin .content .end .dashboard_info {
   display: flex;
   justify-content: start;
   align-items: end;
@@ -541,7 +543,7 @@ h1, h2, h3, h4, h5, p {
   border-radius: 10px;
   gap: 20px;
 }
-#admin .content .end .info .icon {
+#admin .content .end .dashboard_info .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,9 +554,45 @@ h1, h2, h3, h4, h5, p {
   border-radius: 55rem;
   color: #005EFF;
 }
-#admin .content .end .info p {
+#admin .content .end .dashboard_info p {
   font-size: 18px;
 }
-#admin .content .end .info span {
+#admin .content .end .dashboard_info span {
   font-size: 14px;
+}
+#admin .content .end .dashboard_info .recent_add {
+  background-color: #FFEACB;
+  color: #FF9F10;
+  padding: 3px 10px;
+  border-radius: 55rem;
+  font-size: 12px;
+}
+#admin .content .end .paket_info {
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+#admin .content .end .paket_info .header a {
+  font-size: 14px;
+}
+#admin .content .end .paket_info table {
+  padding: 1rem;
+  font-size: 14px;
+}
+#admin .content .end .paket_info table td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#admin .content .end .paket_info table tbody .btn_active {
+  padding: 5px 1rem;
+  border-radius: 5px;
+  background-color: #D1FCD0;
+  color: #21AB1E;
+}
+#admin .content .end .paket_info table tbody .btn_nonactive {
+  padding: 5px 1rem;
+  border-radius: 5px;
+  background-color: #fcd0d0;
+  color: #ab1e1e;
 }/*# sourceMappingURL=stylesheet.css.map */

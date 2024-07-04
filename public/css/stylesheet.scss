@@ -274,7 +274,7 @@ h1,h2,h3,h4,h5,p {
             display: flex;
             flex-direction: column;
             
-            .sponsor-text {
+            .sponsorship {
                 display: block !important;
                 color: $gray;
                 font-size: 14px;
@@ -286,7 +286,7 @@ h1,h2,h3,h4,h5,p {
             .sponsor-image {
                 img {
                     // filter: grayscale(1);
-                    width: 300px;
+                    max-width: 300px;
                     height: 30px;
                     transition: .2s;
                 }
@@ -557,7 +557,8 @@ h1,h2,h3,h4,h5,p {
         color: white !important;
     }
 
-    .sidebar {
+    #sidebar {
+        transition: .7s;
         gap: 4rem;
         min-width: 280px;
         max-width: 280px;
@@ -592,9 +593,9 @@ h1,h2,h3,h4,h5,p {
         padding: 4rem;
         
         .end {
+            width: 100%;
             margin-top: 4rem;
-
-            .info {
+            .dashboard_info {
                 display: flex;
                 justify-content: start;
                 align-items: end;
@@ -618,6 +619,48 @@ h1,h2,h3,h4,h5,p {
                 }
                 span {
                     font-size: 14px;
+                }
+                .recent_add {
+                    background-color: #FFEACB;
+                    color: $orange;
+                    padding: 3px 10px;
+                    border-radius: 55rem;
+                    font-size: 12px;
+                }
+            }
+
+            .paket_info {
+                width: 100%;
+                padding: 2rem;
+                background-color: white;
+                border-radius: 10px;
+
+                .header {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+                table {
+                    padding: 1rem;
+                    font-size: 14px;
+                    td {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                    tbody {
+                        .btn_active {
+                            padding: 5px 1rem;
+                            border-radius: 5px;
+                            background-color: #D1FCD0;
+                            color: #21AB1E;
+                        }
+                        .btn_nonactive {
+                            padding: 5px 1rem;
+                            border-radius: 5px;
+                            background-color: #fcd0d0;
+                            color: #ab1e1e;
+                        }
+                    }
                 }
             }
         }
