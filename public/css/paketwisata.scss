@@ -52,7 +52,7 @@
     }
 }
 
-.paket {
+.button-js {
     margin-top: 2%;
     margin-left: 6%;
 }
@@ -74,6 +74,22 @@
 
 .buton:hover {
     cursor: pointer;
+}
+
+.input-Jumlah {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+.input-group .btn {
+    width: 40px;
+}
+
+.input-group .form-control {
+    max-width: 60px;
 }
 
 .content {
@@ -155,4 +171,8 @@
         margin: 0;
         font-size: 14px;
     }
+}
+
+.hidden{
+    display: none;
 }
