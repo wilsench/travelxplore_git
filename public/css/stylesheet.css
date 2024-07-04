@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, p {
   width: 100%;
 }
 .logo a {
+  width: -moz-max-content;
   width: max-content;
   display: flex;
   gap: 1rem;
@@ -120,6 +121,7 @@ h1, h2, h3, h4, h5, p {
   width: 100%;
 }
 .navbar-main .logo a {
+  width: -moz-max-content;
   width: max-content;
   display: flex;
   gap: 1rem;
@@ -199,7 +201,8 @@ h1, h2, h3, h4, h5, p {
   width: 50%;
 }
 #hero .hero-start img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #hero .hero-end {
   width: 50%;
@@ -209,6 +212,7 @@ h1, h2, h3, h4, h5, p {
   justify-content: center;
 }
 #hero .hero-end .start .tagline {
+  width: -moz-max-content;
   width: max-content;
   font-weight: 600;
 }
@@ -293,9 +297,11 @@ h1, h2, h3, h4, h5, p {
   overflow: hidden;
 }
 #punchline .end .splide__slide {
+  max-width: -moz-max-content;
   max-width: max-content;
 }
 #punchline .end .splide__slide .image-wrapper {
+  width: -moz-max-content;
   width: max-content;
   min-height: 120px;
   display: flex;
@@ -314,6 +320,7 @@ h1, h2, h3, h4, h5, p {
 }
 #galeri .galeri-end {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   position: relative;
 }
@@ -328,7 +335,8 @@ h1, h2, h3, h4, h5, p {
 }
 #galeri .custom-grid .row img {
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 #galeri .custom-grid .row img:hover {
@@ -336,6 +344,7 @@ h1, h2, h3, h4, h5, p {
   transition: 0.2s;
 }
 #galeri .custom-grid .description {
+  height: -moz-max-content;
   height: max-content;
   border: 1px solid #005EFF;
   border-radius: 10px;
@@ -374,11 +383,14 @@ h1, h2, h3, h4, h5, p {
 }
 #paket .paket-end a {
   display: block;
+  max-width: -moz-max-content;
   max-width: max-content;
   text-decoration: none;
 }
 #paket .paket-end a .paket-card {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   margin-top: 2rem;
   max-width: 430px;
   min-width: 430px;
