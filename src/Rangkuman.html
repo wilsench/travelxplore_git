@@ -80,47 +80,53 @@
             
         </div>
         <div class="signin">
-            <a href="signin.html" class="btn btn-main fw-semibold">Sign In</a>
+            <a href="signin.html" class="btn btn-main fw-semibold d-none">Sign In</a>
         </div>
     </nav>
-    <a href="index.html" class="p-5 back-button text-main-orange"><i class="bi bi-chevron-left"></i>Kembali</a>
     <div class="container mt-5">
-        <h1>RESERVASI PEMESANAN</h1>
-        <div>
-            <diV>
-                <p><strong>Nama Lengkap:</strong> <span id="namaLengkap"></span></p>
-                <p><strong>Alamat Email:</strong> <span id="email"></span></p>
-                <p><strong>Telepon:</strong> <span id="telepon"></span></p>
-                <p><strong>Provinsi:</strong> <span id="provinsi"></span></p>
-                <p><strong>Kabupaten/Kota:</strong> <span id="kabupaten"></span></p>
-                <p><strong>Alamat Lengkap:</strong> <span id="alamatLengkap"></span></p>
-            </diV>
-            <div>
-                <h3>PAKET WISATA</h3>
-                <div>
+        <div class="reservation-wrapper mx-auto">
+            <div class="header">
+                <img src="../public/assets/R1.png" class="img-header">
+            </div>
+            <div class="section" id="reservation-section">
+                <div class="section-content">
+                    <p><strong>Nama Lengkap:</strong> <span id="namaLengkap"></span></p>
+                    <p><strong>Alamat Email:</strong> <span id="email"></span></p>
+                    <p><strong>Telepon:</strong> <span id="telepon"></span></p>
+                    <p><strong>Provinsi:</strong> <span id="provinsi"></span></p>
+                    <p><strong>Kabupaten/Kota:</strong> <span id="kabupaten"></span></p>
+                    <p><strong>Alamat Lengkap:</strong> <span id="alamatLengkap"></span></p>
+                </div>
+            </div>
+            <div class="section" id="package-section">
+                <img src="../public/assets/R2.png" class="section-header img-content">
+                <div class="section-content">
                     <p><strong>Nama Paket Wisata:</strong> <span id="namaPaket"></span></p>
                     <p><strong>Jumlah Peserta:</strong> <span id="jumlahPeserta"></span></p>
                     <p><strong>Harga Paket Wisata:</strong> <span id="hargaPaket"></span></p>
                 </div>
             </div>
-            <div>
-                <h3>PELAYANAN PAKET WISATA</h3>
-                <div>
+            <div class="section" id="service-section">
+                <img src="../public/assets/R3.png" class="section-header img-content">
+                <div class="section-content">
                     <p><strong>Harga Transportasi:</strong> <span id="hargaTransportasi"></span></p>
                     <p><strong>Harga Makanan:</strong> <span id="hargaMakanan"></span></p>
                     <p><strong>Harga Penginapan:</strong> <span id="hargaPenginapan"></span></p>
                 </div>
             </div>
-            <div>
-                <h3>KODE PEMBAYARAN</h3>
-                <div>
+            <div class="section" id="payment-section">
+                <img src="../public/assets/R4.png" class="section-header img-content">
+                <div class="section-content">
                     <p><strong>Total Harga:</strong> <span id="totalHarga"></span></p>
                     <p><strong>Kode Pembayaran:</strong> <span id="kodePembayaran"></span></p>
                 </div>
             </div>
+            <div class="footer">
+                <img src="../public/assets/R5.png" class="img-footer">
+            </div>
         </div>
     </div>
-    
+       
     <!---->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../public/js/rangkuman.js"></script>

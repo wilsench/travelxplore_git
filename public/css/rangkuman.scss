@@ -1,62 +1,63 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css";
+
+body {
+    background-color: #f8f9fa;
+}
+
 .container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10% !important;
+}
 
-    h1 {
-        background: #003D79;
-        color: white;
-        padding: 15px;
-        border-radius: 5px 5px 0 0;
+.reservation-wrapper {
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    padding: 1rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header,
+.footer {
+    text-align: center;
+
+    .img-header,
+    .img-footer {
+        width: 100%;
+        height: 80px; // Atur tinggi sesuai kebutuhan
+        object-fit: cover; // Pastikan gambar menutupi area yang diinginkan
+    }
+}
+
+.section {
+    margin-bottom: 2rem;
+    margin-left: 1rem; // Menjorok ke kanan sedikit
+
+    .section-header {
+        width: calc(100% - 1rem); // Sesuaikan lebar dengan margin
+        height: auto;
+        margin-left: 6rem; // Menjorok ke kanan sedikit
+    }
+
+    .section-content {
+        background-color: #ffffff;
+        padding: 1rem;
+        border: 1px solid #ffffff;
+        border-top: none;
+        margin-left: 6rem; // Menjorok ke kanan sedikit
+    }
+
+    p {
         margin: 0;
-        font-size: 24px;
     }
+}
 
-    div {
-        padding: 20px;
-
-        h3 {
-            background: #003D79;
-            color: white;
-            padding: 10px;
-            margin: 20px 0 10px 0;
-            border-radius: 5px;
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-
-            strong {
-                color: #333;
-                flex: 1;
-            }
-
-            span {
-                color: #555;
-                flex: 2;
-                text-align: right;
-            }
-        }
-    }
-
-    .total {
-        margin-top: 20px;
-
-        p {
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
+.img-content {
+    width: 100%;
+    height: 40px; // Atur tinggi sesuai kebutuhan
+    object-fit: cover; // Pastikan gambar menutupi area yang diinginkan
 }
